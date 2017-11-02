@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 /**
- * 购物车
+ * 购物车(强实体和弱实体)弱实体是附着在强实体下的
  * @author Drui
  *
  */
@@ -16,12 +16,12 @@ public class Cart {
 	private int id;
 	
 	// 用户账号
-	private Account account;
+//	private Account account;
 	
 	// 商品、数量,hashmap中放的数据不是顺序的
 	private HashMap<Product,Integer> map = new HashMap<>();
 	
-	// 总金额时
+	// 总金额时,没有持久化，没有存储到数据库中
 	private BigDecimal total;
 	
 	/**
@@ -40,8 +40,7 @@ public class Cart {
 		}
 		return total;
 	}
-	
-	
+		
 //	private ArrayList<Product> cart = new ArrayList<Product>();
 	
 	public Cart() {
@@ -57,12 +56,12 @@ public class Cart {
 	}
 
 
-	public Account getAccount() {
-		return account;
-	}
-	public void setAccount(Account account) {
-		this.account = account;
-	}
+//	public Account getAccount() {
+//		return account;
+//	}
+//	public void setAccount(Account account) {
+//		this.account = account;
+//	}
 
 
 

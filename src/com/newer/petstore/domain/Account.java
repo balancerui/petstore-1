@@ -1,5 +1,6 @@
 package com.newer.petstore.domain;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -15,6 +16,7 @@ public class Account {
 	private String name;
 	private String password;
 	private Address address;
+	List<Address> AddressList = new ArrayList<>();
 	
 	// ¹ºÎï³µ
 	Cart cart;

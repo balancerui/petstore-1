@@ -19,6 +19,7 @@ public class Category {
 	// 该分类的所有商品
 	private List<Product> productList = new LinkedList<>();
 	
+	
 	public Category() {
 		
 	}

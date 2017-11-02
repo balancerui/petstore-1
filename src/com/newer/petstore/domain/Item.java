@@ -23,7 +23,6 @@ public class Item {
 
 	// ×Ü¼Û
 	private BigDecimal total;
-	
 
 
 }
